@@ -1,0 +1,63 @@
+@import 'base';
+
+/* Custom group classes / customisation of Tailwind classes */
+@layer components {
+  .dirty-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: theme('colors.primary');
+  }
+
+  .primary-link {
+    @apply text-primary dark:text-primary-light underline hover:text-primary-dark dark:hover:text-primary-highlight cursor-pointer;
+  }
+
+  .blue-gray-link {
+    @apply text-blue-gray-700 dark:text-blue-gray-900 underline cursor-pointer;
+  }
+
+  .button-primary {
+    @apply items-center rounded-md border border-transparent bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .button-red {
+    @apply items-center rounded-md border border-transparent bg-red-700 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-2;
+  }
+
+  .button-primary-outline {
+    @apply items-center rounded-md border border-primary dark:border-primary-light bg-white dark:bg-white/5 px-4 py-2 text-base font-medium text-primary dark:text-primary-light hover:bg-gray-50 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+
+  .button-red-outline {
+    @apply items-center rounded-md border border-red-700 dark:border-red-300 bg-white dark:bg-white/5 px-4 py-2 text-base font-medium text-red-700 dark:text-red-300 hover:bg-gray-50 dark:hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-offset-2;
+  }
+
+  .badge-primary-tint {
+    @apply inline-flex items-center rounded-md bg-primary-tint px-2 py-1 text-xs font-medium text-primary ring-1 ring-inset ring-primary/10;
+  }
+
+  .form-text-input {
+    @apply block dark:bg-white/5 dark:text-slate-300 w-full rounded-md border-gray-300 dark:border-white/10 shadow-sm focus:border-primary focus:ring-primary dark:focus:border-primary-light dark:focus:ring-primary-light text-sm user-invalid:border-red-600 user-invalid:ring-red-600 user-invalid:focus:border-red-600 user-invalid:focus:ring-red-600 dark:user-invalid:border-red-600 dark:user-invalid:ring-red-600 dark:user-invalid:focus:border-red-600 dark:user-invalid:focus:ring-red-600;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-gray-700 dark:text-white;
+  }
+
+  article.prose {
+    svg {
+      display: unset;
+    }
+    img {
+      display: unset;
+    }
+  }
+
+  body {
+    @apply dark:bg-slate-900 text-gray-900 dark:text-slate-300;
+  }
+}

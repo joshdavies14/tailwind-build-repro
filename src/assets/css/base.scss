@@ -1,0 +1,28 @@
+@import url(https://rsms.me/inter/inter.css);
+
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Set default colours that can be overriden by whitelabel configurations */
+  /* These must be RGB values - see https://tailwindcss.com/docs/customizing-colors#using-css-variables */
+  :root {
+    --colour-primary: 13 89 162;
+    --colour-primary-dark: 8 53 95;
+    --colour-primary-highlight: 38 128 194;
+    --colour-primary-lighter: 15 96 155;
+    --colour-primary-light: 150 192 233;
+    --colour-primary-vibrant: 179 236 255;
+    --colour-primary-vibranter: 89 214 255;
+    --colour-primary-tint: 237 243 247;
+
+    color-scheme: light dark;
+  }
+}
+
+html {
+  background: #F1F1F1;
+}
+
